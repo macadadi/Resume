@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { ThemeProvider } from "styled-components";
+import { GlobalStyles } from "./components/defaultThemes/global";
+import { darkTheme, lightTheme } from "./components/defaultThemes/theme";
+import React, { useState } from 'react';
+import { useDarkMode } from "./components/defaultThemes/useDarkMode";
+import Horizontalnav from "./components/pagecomponent/Horizontalnav";
+import Resumebody from "./components/pagecomponent/Resumebody";
 
 function App() {
+ // const [theme, setTheme] = useState('light');
+  const [theme, toggleTheme] = useDarkMode();
+  const themeMode = theme === 'light' ? lightTheme : darkTheme;
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  
+    <ThemeProvider theme={themeMode}>
+      <>
+        <GlobalStyles />
+        <Horizontalnav />
+        <Resumebody />
+        <button  onClick={toggleTheme}>Toggle theme</button>
+        <h1>It's a light theme!</h1>
+
+      </>
+    </ThemeProvider>
+  )
 }
 
 export default App;
