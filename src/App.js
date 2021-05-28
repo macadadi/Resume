@@ -1,29 +1,26 @@
-import { ThemeProvider } from "styled-components";
-import { GlobalStyles } from "./components/defaultThemes/global";
-import { darkTheme, lightTheme } from "./components/defaultThemes/theme";
-import React, { useState } from 'react';
-import { useDarkMode } from "./components/defaultThemes/useDarkMode";
-import Horizontalnav from "./components/pagecomponent/Horizontalnav";
-import Resumebody from "./components/pagecomponent/Resumebody";
+import './App.css'
+import {ThemeProvider} from "styled-components";
+import { GlobalStyles } from "./styled/Globaltheme.style";
+import { darkTheme, lightTheme } from "./styled/Theme.style";
+import {useDarkMode} from './styled/useDarkmode'
+import Resumenav from './components/resumenav/Resumenav'
 
 function App() {
- // const [theme, setTheme] = useState('light');
-  const [theme, toggleTheme] = useDarkMode();
-  const themeMode = theme === 'light' ? lightTheme : darkTheme;
-
-
-  return (
+ 
+  const [theme, themeToggler] = useDarkMode();
+  const themeMode = theme === 'light' ? lightTheme : darkTheme
   
-    <ThemeProvider theme={themeMode}>
-      <>
-        <GlobalStyles />
-        <Horizontalnav />
-        <Resumebody />
-        <button  onClick={toggleTheme}>Toggle theme</button>
-        <h1>It's a light theme!</h1>
-
-      </>
-    </ThemeProvider>
+  return (
+      
+       <ThemeProvider theme={themeMode} >
+  
+        <GlobalStyles/>
+      <Resumenav />
+          <button onClick={themeToggler}>Switch Theme</button>
+     
+        </ ThemeProvider >
+        
+      
   )
 }
 
