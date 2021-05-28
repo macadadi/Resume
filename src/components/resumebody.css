@@ -1,5 +1,6 @@
 .resumebody{
     background-color: gray;
+    border-radius: 50px;
 }
 
 /*profile section */
@@ -28,4 +29,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+
+/*projects-section*/
+
+.projects-section img{
+    width: 100%;
 }

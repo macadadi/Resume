@@ -21,7 +21,7 @@ const Resumenav = ({themeToggler}) => {
 
   return (
     
-        
+        <>
       <Navbar className='navcon sticky-top' light expand="md">
         <NavbarBrand className='navcon mr-auto' >Developer Resume</NavbarBrand>
         <NavbarToggler onClick={toggle} />
@@ -32,7 +32,9 @@ const Resumenav = ({themeToggler}) => {
           <NavbarText className='navcon mr-4'><NavLink href=""className='navcon'>GitHub</NavLink></NavbarText>
           <NavbarText className='navcon mr-4'><button onClick={themeToggler}>Switch Theme</button></NavbarText>
         </Collapse>
+     
       </Navbar>
+      </>
 
     
   );
