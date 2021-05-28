@@ -1,0 +1,31 @@
+.resumebody{
+    background-color: gray;
+}
+
+/*profile section */
+.pic-div{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.pic-div > img{
+    width: 35%;
+    margin-top: 5%;
+    margin-bottom: 5px;
+    border: 4px solid orange;
+    border-radius: 50%;
+}
+
+.name-col{
+    padding-top: 15%;
+  
+}
+
+/* skills styling*/
+.skills-lu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

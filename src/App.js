@@ -4,6 +4,8 @@ import { GlobalStyles } from "./styled/Globaltheme.style";
 import { darkTheme, lightTheme } from "./styled/Theme.style";
 import {useDarkMode} from './styled/useDarkmode'
 import Resumenav from './components/resumenav/Resumenav'
+import { Container } from 'reactstrap';
+import Resumebody from './components/Resumebody';
 
 function App() {
  
@@ -11,16 +13,16 @@ function App() {
   const themeMode = theme === 'light' ? lightTheme : darkTheme
   
   return (
-      
+      <Container>
        <ThemeProvider theme={themeMode} >
-  
         <GlobalStyles/>
-      <Resumenav />
-          <button onClick={themeToggler}>Switch Theme</button>
+      <Resumenav themeToggler={themeToggler}/>
+      <Resumebody />
+          
      
         </ ThemeProvider >
         
-      
+        </Container>
   )
 }
 
