@@ -47,6 +47,9 @@
     align-items: center;
     
 }
+.t-data td{
+    padding-left: 8px;
+}
 
 /* skills styling*/
 .skills-lu{

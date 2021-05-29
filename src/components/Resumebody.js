@@ -9,6 +9,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import PhoneIcon from '@material-ui/icons/Phone';
 import EmailIcon from '@material-ui/icons/Email';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 function Resumebody() {
     return (
@@ -24,10 +25,11 @@ function Resumebody() {
         </Col>
         <Col  md="4">
                  <diV className="profile-name">
-                <h1>Marice Kidura</h1>
+                <h1>Maricus Adadi</h1>
                 <h4>Software Developer</h4>
                 <div>
-                    <LinkedInIcon />
+                  <button><LinkedInIcon color="primary" fontSize="large"/></button>
+                  <button><GitHubIcon color="primary" fontSize="large"/></button>  
                 </div>
                 </diV>
           
@@ -39,9 +41,12 @@ function Resumebody() {
             {/*about me section */}
             <center>
             <h1>About Me</h1></center>
-            <p>Hello ! My name is Maurice ,some people call me Comrade coz am lost in this 
-                jungle of Nairobi.Am deeply in love with Nancy Muthoni that i onced cried when she pranked 
-                me that we were breaking up !!</p>
+            <p> &nbsp; &nbsp; Hello ! My name is Maricus, an enthusiastic software developer with outstanding skills in
+                 front-end development and a vast knowledge in IT. Am experinced in React and Redux ,currently 
+                 learning django with a long term goal of taking a career in data science and analysis.
+                 <br/>
+                 &nbsp; &nbsp; I like taking new challenges and above all am a cool and nice person to be arround
+            </p>
         </Col>
         {/*skills section */}
         <Col md="6"style={{height:'250px'}}> <center> <h1>Skills</h1>  </center>
@@ -72,9 +77,9 @@ function Resumebody() {
       </Row>
       <Row>
           {/*contact section */}
-        <Col md="12"style={{height:'250px'}}>
+        <Col md="12">
             <div className="contact-outer-div">
-                <div className="contact-icons">
+                {/* <div className="contact-icons">
                    <div> <EmailIcon color="primary" fontSize="large"/></div>
                    <div><PhoneIcon color="primary" fontSize="large" /></div>
                    <div> <LocationOnIcon color='primary' fontSize="large" /></div>
@@ -90,8 +95,46 @@ function Resumebody() {
                     <p>(254) 710770278</p>
                     <p> Nairobi,kenya</p>
 
-                </div>
-
+                </div> */}
+      
+      {/*contact informaation section */}
+                <table className="t-data">
+                    <tbody>
+                        <tr>
+                            <td >
+                            <EmailIcon color="primary" fontSize="large"/>
+                            </td>
+                            <td>
+                            Email
+                            </td>
+                            <td>
+                            macadadi36@gmail
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                            <PhoneIcon color="primary" fontSize="large" />
+                            </td>
+                            <td>
+                            Phone
+                            </td>
+                            <td>
+                            (254) 710770278
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                            <LocationOnIcon color='primary' fontSize="large" />
+                            </td>
+                            <td>
+                            Country
+                            </td>
+                            <td>
+                            Nairobi,Kenya
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </Col>
       </Row>
