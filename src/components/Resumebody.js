@@ -2,6 +2,7 @@ import React from 'react'
 import { Col, Container, Row } from 'reactstrap'
 import pic1 from './pic1.png'
 import news from './news.png'
+import bg from './bg.jpg'
 import shows from './shows.png'
 import store from './store.png'
 import './resumebody.css'
@@ -17,7 +18,7 @@ function Resumebody() {
         <div className="resumebody">
     <Container >
             {/* profile section */}
-        <Row className="profile-wrap">
+        <Row className="profile-wrap" >
         
         <Col md="4"className = 'profile-general' >
           
@@ -25,28 +26,32 @@ function Resumebody() {
         </Col>
         <Col  md="4">
                  <diV className="profile-name">
+                     <div>
                 <h1>Maricus Adadi</h1>
                 <h4>Software Developer</h4>
-                <div>
-                  <button><LinkedInIcon color="primary" fontSize="large"/></button>
-                  <button><GitHubIcon color="primary" fontSize="large"/></button>  
+                <div>   
+                <a href="https://www.linkedin.com/in/maricus-adadi-93b32a10b" target="_blank">
+                      <button ><LinkedInIcon color="primary" fontSize="large"/></button></a>
+                <a href="https://github.com/macadadi" target="_blank">
+                <button ><GitHubIcon color="primary" fontSize="large"/></button></a>
+                
+                  
+                </div>
                 </div>
                 </diV>
           
 
         </Col>
       </Row>
-      <Row>
-        <Col md="6">
+      <Row className="skills-sectionl">
+        <Col md="6" >
             {/*about me section */}
             <center>
             <h1>About Me</h1></center>
             <p> &nbsp; &nbsp; Hello ! My name is Maricus, an enthusiastic software developer with outstanding skills in
-                 front-end development and a vast knowledge in IT. Am experinced in React and Redux ,currently 
+                 front-end development and a vast knowledge in IT. Am experienced in React and Redux ,currently 
                  learning django with a long term goal of taking a career in data science and analysis.
-                 <br/>
-                 &nbsp; &nbsp; I like taking new challenges and above all am a cool and nice person to be arround
-            </p>
+                   </p>
         </Col>
         {/*skills section */}
         <Col md="6"style={{height:'250px'}}> <center> <h1>Skills</h1>  </center>
@@ -65,20 +70,31 @@ function Resumebody() {
              {/*projects section */}
           <center><h1>Projects</h1></center> </Col>
       </Row>
-      <Row className="projects-section">
+      <Row className="projects-section  ">
        
-        <Col md="4"style={{height:'250px'}}> <img src={shows} alt='Shows images' />
-        <h4>Prime shows</h4></Col>
+        <Col md="4"> <img src={shows} alt='Shows images' />
+       <div className="project-links">  <h4>Prime shows</h4>
+        <a href="https://primeshow-9de5f.web.app/" target="_blank">Demo</a>
+        <a href="https://github.com/macadadi/netflix-clone" target="_blank">Git hub</a></div>
+        </Col>
         <Col md="4"style={{height:'250px'}}> <img src={store} alt='store images' />
-        <h4>Online Store</h4></Col>
+        <div className="project-links">  <h4>Online Store</h4>
+        <a href="https://primeshow-9de5f.web.app/" target="_blank">Demo</a>
+        <a href="https://github.com/macadadi/Onlinestore" target="_blank">Git hub</a></div>
+        </Col>
         <Col md="4"style={{height:'250px'}}> <img src={news} alt='news images' />
-        <h4>News website</h4></Col>
+        <div className="project-links">  <h4>Newsline</h4>
+        <a href="https://primeshow-9de5f.web.app/" target="_blank">Demo</a>
+        <a href="https://github.com/macadadi/Newsweb" target="_blank">Git hub</a></div>
+        </Col>
        
       </Row>
       <Row>
           {/*contact section */}
         <Col md="12">
+     <center>   <h3>Contact info:</h3></center>
             <div className="contact-outer-div">
+              
                 {/* <div className="contact-icons">
                    <div> <EmailIcon color="primary" fontSize="large"/></div>
                    <div><PhoneIcon color="primary" fontSize="large" /></div>
@@ -138,7 +154,8 @@ function Resumebody() {
             </div>
         </Col>
       </Row>
-      <Row>
+      {/*footer */}
+      <Row className="footer">
         <Col md="12"><center><h6> macadadi &copy; 2021</h6></center></Col>
       </Row>
       </Container>

@@ -18,10 +18,10 @@ const Resumenav = ({themeToggler}) => {
         <>
         <diV className='navcon sticky-top' >
       <Navbar className='navcon sticky-top' light expand="md">
-        <NavbarBrand className='navcon mr-auto' >Developer Resume</NavbarBrand>
+        <NavbarBrand className='navcon mr-auto' >Resume </NavbarBrand>
          <div className='mr-auto'></div>
    
-          <NavbarText className='navcon mr-4'><button onClick={themeToggler}>Switch Theme</button></NavbarText>
+          <NavbarText className='navcon mr-4'><button className="navb-btn" onClick={themeToggler}>Switch Theme</button></NavbarText>
      
       </Navbar>
       {/*curved top */}
