@@ -75,17 +75,17 @@ function Resumebody() {
         <Col md="4"> <img src={shows} alt='Shows images' />
        <div className="project-links">  <h4>Prime shows</h4>
         <a href="https://primeshow-9de5f.web.app/" target="_blank">Demo</a>
-        <a href="https://github.com/macadadi/netflix-clone" target="_blank">Git hub</a></div>
+        <a href="https://github.com/macadadi/netflix-clone" target="_blank">Github</a></div>
         </Col>
         <Col md="4"style={{height:'250px'}}> <img src={store} alt='store images' />
         <div className="project-links">  <h4>Online Store</h4>
-        <a href="https://primeshow-9de5f.web.app/" target="_blank">Demo</a>
-        <a href="https://github.com/macadadi/Onlinestore" target="_blank">Git hub</a></div>
+        <a href="https://onlinestore-bca9f.web.app/" target="_blank">Demo</a>
+        <a href="https://github.com/macadadi/Onlinestore" target="_blank">Github</a></div>
         </Col>
         <Col md="4"style={{height:'250px'}}> <img src={news} alt='news images' />
         <div className="project-links">  <h4>Newsline</h4>
-        <a href="https://primeshow-9de5f.web.app/" target="_blank">Demo</a>
-        <a href="https://github.com/macadadi/Newsweb" target="_blank">Git hub</a></div>
+        <a href="https://newsline-57c20.web.app/" target="_blank">Demo</a>
+        <a href="https://github.com/macadadi/Newsweb" target="_blank">Github</a></div>
         </Col>
        
       </Row>
