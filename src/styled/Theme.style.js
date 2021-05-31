@@ -4,6 +4,7 @@ export const lightTheme = {
     toggleBorder: '#FFF',
     background: '#363537',
     bgcolor:'whitesmoke',
+   
 }
 export const darkTheme = {
     body: 'black',
@@ -11,4 +12,5 @@ export const darkTheme = {
     toggleBorder: '#6B8096',
     background: 'blue',
     bgcolor:'gray',
+ 
 }

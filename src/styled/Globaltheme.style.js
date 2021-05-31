@@ -16,11 +16,10 @@ export const GlobalStyles = createGlobalStyle`
     background-color: ${({ theme }) => theme.bgcolor};;
   }
   .resumebody{
-    background-color: ${({ theme }) => theme.bgcolor};;
+    background-color: ${({ theme }) => theme.bgcolor};
  
 }
 .profile-general img{
   border: 4px solid ${({ theme }) => theme.text};
 }
-
   `
