@@ -12,5 +12,15 @@ export const GlobalStyles = createGlobalStyle`
     color:  ${({ theme }) => theme.text} !important;
     background-color: ${({ theme }) => theme.body};;
   }
+  .curved-top {
+    background-color: ${({ theme }) => theme.bgcolor};;
+  }
+  .resumebody{
+    background-color: ${({ theme }) => theme.bgcolor};;
+ 
+}
+.profile-general img{
+  border: 4px solid ${({ theme }) => theme.text};
+}
 
   `

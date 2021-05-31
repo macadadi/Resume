@@ -11,6 +11,11 @@ import {
 const Resumenav = ({themeToggler}) => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const btndisplay=()=>{
+    themeToggler()
+    setIsOpen(!isOpen)
+  }
+
 
 
   return (
@@ -21,7 +26,8 @@ const Resumenav = ({themeToggler}) => {
         <NavbarBrand className='navcon mr-auto' >Resume </NavbarBrand>
          <div className='mr-auto'></div>
    
-          <NavbarText className='navcon mr-4'><button className="navb-btn" onClick={themeToggler}>Switch Theme</button></NavbarText>
+          <NavbarText className='navcon mr-4'><button className="navb-btn" onClick={btndisplay}>
+            {isOpen ? 'Dark theme' : 'Light theme'}</button></NavbarText>
      
       </Navbar>
       {/*curved top */}

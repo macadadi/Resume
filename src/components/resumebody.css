@@ -1,7 +1,3 @@
-.resumebody{
-    background-color: gray;
- 
-}
 
 /*Nav styles*/
 .profile-wrap{
@@ -13,7 +9,7 @@
    
 }
 .curved-top {
-    background-color: gray;
+
     border-top-right-radius: 50px;
     border-top-left-radius: 50px;
 }
@@ -40,12 +36,9 @@
 .profile-general img{
     width: 65%;
     margin:auto;
-    border: 4px solid orange;
     border-radius: 50%;
 }
-.profile-name > h1 h4 div{
-    background-color: gray;
-}
+
 
 .profile-name button{
     margin-right: 10px;
@@ -95,7 +88,10 @@
     justify-content: center;
     align-items: center;
 }
-
+.b-shad{
+    box-shadow: 2px 5px;
+    margin-bottom: 20px;
+}
 /*footer*/
 .footer{
     margin-top: 20px;
@@ -121,7 +117,7 @@ a{
 
     text-decoration: none !important;
     font-size: 18px;
-    color: white !important;
+    color: black !important;
 
 }
 a:hover{

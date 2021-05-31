@@ -48,9 +48,9 @@ function Resumebody() {
             {/*about me section */}
             <center>
             <h1>About Me</h1></center>
-            <p> &nbsp; &nbsp; Hello ! My name is Maricus, an enthusiastic software developer with outstanding skills in
+            <p> &nbsp; &nbsp; Hello! My name is Maricus, an enthusiastic software developer with outstanding skills in
                  front-end development and a vast knowledge in IT. Am experienced in React and Redux ,currently 
-                 learning django with a long term goal of taking a career in data science and analysis.
+                 learning django with a long term goal of undertaking a career in data science and analysis.
                    </p>
         </Col>
         {/*skills section */}
@@ -59,7 +59,7 @@ function Resumebody() {
        <div className="skills-lu">
            <div> <h4>React</h4> <h4>Django</h4> </div> <div><h4>Bootstrap</h4>
             <h4>Redux</h4> </div> <div><h4>Javascript</h4>   <h4>Python</h4> </div> <div><h4>Material ui</h4>
-           <h4>Mongo DB</h4></div></div>
+          </div></div>
       
         
         
@@ -72,17 +72,17 @@ function Resumebody() {
       </Row>
       <Row className="projects-section  ">
        
-        <Col md="4"> <img src={shows} alt='Shows images' />
+        <Col md="4" className='b-shad'> <img src={shows} alt='Shows images' />
        <div className="project-links">  <h4>Prime shows</h4>
         <a href="https://primeshow-9de5f.web.app/" target="_blank">Demo</a>
         <a href="https://github.com/macadadi/netflix-clone" target="_blank">Github</a></div>
         </Col>
-        <Col md="4"style={{height:'250px'}}> <img src={store} alt='store images' />
+        <Col md="4" className='b-shad'> <img src={store} alt='store images' />
         <div className="project-links">  <h4>Online Store</h4>
         <a href="https://onlinestore-bca9f.web.app/" target="_blank">Demo</a>
         <a href="https://github.com/macadadi/Onlinestore" target="_blank">Github</a></div>
         </Col>
-        <Col md="4"style={{height:'250px'}}> <img src={news} alt='news images' />
+        <Col md="4" className='b-shad'> <img src={news} alt='news images' />
         <div className="project-links">  <h4>Newsline</h4>
         <a href="https://newsline-57c20.web.app/" target="_blank">Demo</a>
         <a href="https://github.com/macadadi/Newsweb" target="_blank">Github</a></div>
@@ -118,7 +118,7 @@ function Resumebody() {
                     <tbody>
                         <tr>
                             <td >
-                            <EmailIcon color="primary" fontSize="large"/>
+                            <EmailIcon className="icon" fontSize="mediam"/>
                             </td>
                             <td>
                             Email
@@ -129,7 +129,7 @@ function Resumebody() {
                         </tr>
                         <tr>
                             <td >
-                            <PhoneIcon color="primary" fontSize="large" />
+                            <PhoneIcon  fontSize="medium" />
                             </td>
                             <td>
                             Phone
@@ -140,7 +140,7 @@ function Resumebody() {
                         </tr>
                         <tr>
                             <td >
-                            <LocationOnIcon color='primary' fontSize="large" />
+                            <LocationOnIcon  fontSize="medium" />
                             </td>
                             <td>
                             Country
