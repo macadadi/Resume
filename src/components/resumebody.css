@@ -14,10 +14,10 @@
     border-top-left-radius: 50px;
 }
 .navb-btn{
-    border: hidden;
+    border: none;
     padding: 5px;
     border-radius: 10px;
-    outline: hidden;
+    outline: none;
 }
 /*profile section */
 .profile-general{
@@ -104,7 +104,6 @@
 h1{
     font-size: 28px !important;
     font-weight: bolder;
-    text-decoration-color: blue !important;
    
 }
 
@@ -132,6 +131,6 @@ a:hover{
       align-items: center;
       justify-content: center;
       justify-items: center;
-      padding-left:30%;
+      text-align: center;
     }
   }
