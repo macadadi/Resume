@@ -2,7 +2,6 @@ import React from 'react'
 import { Col, Container, Row } from 'reactstrap'
 import pic1 from './pic1.png'
 import news from './news.png'
-import bg from './bg.jpg'
 import shows from './shows.png'
 import store from './store.png'
 import './resumebody.css'
@@ -22,7 +21,7 @@ function Resumebody() {
         
         <Col md="4"className = 'profile-general' >
           
-        <img src={pic1} alt='Photo images' />
+        <img src={pic1} alt='profile-pic' />
         </Col>
         <Col  md="4">
                  <diV className="profile-name">
@@ -30,9 +29,9 @@ function Resumebody() {
                 <h1>Maricus Adadi</h1>
                 <h4>Software Developer</h4>
                 <div>   
-                <a href="https://www.linkedin.com/in/maricus-adadi-93b32a10b" target="_blank">
+                <a href="https://www.linkedin.com/in/maricus-adadi-93b32a10b" target="_blank" rel="noopener noreferrer">
                       <button ><LinkedInIcon color="primary" fontSize="large"/></button></a>
-                <a href="https://github.com/macadadi" target="_blank">
+                <a href="https://github.com/macadadi" target="_blank" rel="noopener noreferrer">
                 <button ><GitHubIcon color="primary" fontSize="large"/></button></a>
                 
                   
@@ -59,6 +58,7 @@ function Resumebody() {
        <div className="skills-lu">
            <div> <h4>React</h4> <h4>Django</h4> </div> <div><h4>Bootstrap</h4>
             <h4>Redux</h4> </div> <div><h4>Javascript</h4>   <h4>Python</h4> </div> <div><h4>Material ui</h4>
+            <h4>Laravel</h4>
           </div></div>
       
         
@@ -74,20 +74,24 @@ function Resumebody() {
        
         <Col md="4" className='b-shad'> <img src={shows} alt='Shows images' />
        <div className="project-links">  <h4>Prime shows</h4>
-        <a href="https://primeshow-9de5f.web.app/" target="_blank">Demo</a>
-        <a href="https://github.com/macadadi/netflix-clone" target="_blank">Github</a></div>
+        <a href="https://primeshow-9de5f.web.app/" target="_blank" rel="noopener noreferrer">Demo</a>
+        <a href="https://github.com/macadadi/netflix-clone" target="_blank" rel="noopener noreferrer">Github</a></div>
         </Col>
         <Col md="4" className='b-shad'> <img src={store} alt='store images' />
         <div className="project-links">  <h4>Online Store</h4>
-        <a href="https://onlinestore-bca9f.web.app/" target="_blank">Demo</a>
-        <a href="https://github.com/macadadi/Onlinestore" target="_blank">Github</a></div>
+        <a href="https://onlinestore-bca9f.web.app/" target="_blank" rel="noopener noreferrer">Demo</a>
+        <a href="https://github.com/macadadi/Onlinestore" target="_blank" rel="noopener noreferrer">Github</a></div>
         </Col>
         <Col md="4" className='b-shad'> <img src={news} alt='news images' />
         <div className="project-links">  <h4>Newsline</h4>
-        <a href="https://newsline-57c20.web.app/" target="_blank">Demo</a>
-        <a href="https://github.com/macadadi/Newsweb" target="_blank">Github</a></div>
+        <a href="https://newsline-57c20.web.app/" target="_blank" rel="noopener noreferrer">Demo</a>
+        <a href="https://github.com/macadadi/Newsweb" target="_blank" rel="noopener noreferrer">Github</a></div>
         </Col>
-       
+        <Col md="4" className='b-shad'> <img src={news} alt='news images' />
+        <div className="project-links">  <h4>Fullstack E-shop</h4><p>(in development)</p>
+        <a href="https://restaurant-c6a07.web.app/" target="_blank" rel="noopener noreferrer">Demo</a>
+        <a href="https://github.com/macadadi/restaurantlandingpage" target="_blank" rel="noopener noreferrer">Github</a></div>
+        </Col>
       </Row>
       <Row>
           {/*contact section */}
