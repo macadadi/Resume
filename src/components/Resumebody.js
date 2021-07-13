@@ -4,6 +4,7 @@ import pic1 from './pic1.png'
 import news from './news.png'
 import shows from './shows.png'
 import store from './store.png'
+import shop from './shop.png'
 import './resumebody.css'
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import PhoneIcon from '@material-ui/icons/Phone';
@@ -87,8 +88,8 @@ function Resumebody() {
         <a href="https://newsline-57c20.web.app/" target="_blank" rel="noopener noreferrer">Demo</a>
         <a href="https://github.com/macadadi/Newsweb" target="_blank" rel="noopener noreferrer">Github</a></div>
         </Col>
-        <Col md="4" className='b-shad'> <img src={news} alt='news images' />
-        <div className="project-links">  <h4>Fullstack E-shop</h4><p>(in development)</p>
+        <Col md="4" className='b-shad'> <img src={shop} alt='news images' />
+        <div className="project-links">  <h4> E-shop</h4>(in progress)
         <a href="https://restaurant-c6a07.web.app/" target="_blank" rel="noopener noreferrer">Demo</a>
         <a href="https://github.com/macadadi/restaurantlandingpage" target="_blank" rel="noopener noreferrer">Github</a></div>
         </Col>
